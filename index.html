@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payroll Management System</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ca14ec59eb.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <p class="nav">PAYROLL MANAGEMENT SYESTEM</p>
+    <ul>
+        <li><a href="#Home"><i class="fa-solid fa-house icon"></i>Home</a> </li>
+        <li><a href="#Employee"><i class="fa-regular fa-user icon"></i>Employee</a> </li>
+        <li><a href="#Salary"><i class="fa-solid fa-dollar-sign icon"></i>Salary</a> </li>
+        <li><a href="#Account"><i class="fa-regular fa-user icon"></i>Account</a> </li>
+        <li><a href="#Branch"><i class="bi bi-bank icon"></i>Branch</a></li>
+    </ul>
+    <div class="content">
+        <section id="Home">
+            <div class="container">
+                <button class="Designation" id="person">Person Designation</button>
+                <button class="Branch" id="person">Add Branch</button>
+                <button class="Bounes" id="person">Add Bounes</button>
+                <button class="Allowences" id="person">Allowences</button>
+                <button class="New User" id="person">Add New User</button>
+                <button class="Deduction" id="person">Deduction</button>
+
+            </div>
+            <h2>Home</h2>
+        </section>
+        <section class="Per-Employee" id="Employee">
+            <h2 class="header">Employee</h2>
+            <div class="container1">
+                <label class="change" for="username">username:</label>
+                <input type="text" class="Employee change" placeholder="Name" required>
+                <label class="change" for="Branch Code">branch code:</label>
+                <input type="number" class="Employee change" placeholder="Number" required><br><br>
+                <label class="change" for="fname">father name:</label>
+                <input type="text" class="Employee change" placeholder="Name" required><br>
+                <br>
+                <label class="change" for="Gender" class="Employee">Gender:</label>
+                <input class="radio" type="radio">Male
+                <input class="radio" type="radio">Female
+                <br>
+                <label class="change" for="phonenumber">Phonenumber:</label>
+                <input type="tel" class="Employee change" placeholder="0000-0000000" pattern="[0-3]{4}-[0-9]{7}"required>
+                <br>
+                <label class="change" for="date of joining">Date Of Joining:</label>
+                <input type="date"  placeholder="Date" class="Employee change" required><br>
+                <br>
+                <button class="btn2">Clear</button>
+                <button class="btn2">Save</button>
+            </div>
+        </section>
+        <section id="Salary">
+            <h2 class="header">Salary</h2>
+        </section>
+        <section id="Account">
+            <h2 class="header">Account</h2>
+            <div class="container-account">
+                <!-- <label for="Employee Account" class="Per-Account change">Employee Account:</label>
+                <input type="number" id="A-Employee" class="Employee" placeholder="Ab1****" minlength="8" maxlength="12">   
+                <label for="Add Insurance" class="Per-Account change">Insurance Amount:</label>
+                <input type="number" id="A-Employee" class="Employee" placeholder="number" required>
+                <label for="Organization Contribution" class="Per-Account change">Organization Contribution:</label>
+                <input type="number" id="A-Employee" class="Employee" placeholder="number" required>
+                <label for="Medical" class="Per-Account change">Medical Allowance:</label>
+                <input type="number" id="A-Employee" class="Employee" placeholder="number" required><br>
+                <br>
+                <button class="Employee" id="Org-employee">Save</button>
+                <button class="Employee" id="Org-employee">Clear</button> -->
+                <label class="information">
+                    <p><span>Employee Account:-</span><input class="type" type="number" placeholder="Ab1*****" required></p>
+                    <br>
+                    <p><span>Insurance Amount:-</span><input class="type" type="number" placeholder="Number" required></p>
+                    <br>
+                    <p><span>Organization Contribution:-</span><input class="type" type="number" placeholder="Number" required></p>
+                    <br>
+                    <p><span>Medical Allowance:-</span><input class="type" type="number" placeholder="Number" required></p>  
+                </label>
+            </div>
+
+
+
+        </section>
+        <section id="Branch">
+            <h2>Branch</h2>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

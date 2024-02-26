@@ -1,0 +1,316 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.nav{
+    align-items: center;
+    position: sticky;
+    font-size: 48px;
+    /* position: fixed; */
+    font-weight: 600;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    top: -1px;
+    color: royalblue;
+    color: white !important;
+    font-family: ui-monospace;
+    background-color: yellow;
+    background-color: rgb(41, 39, 39) !important;
+    padding: 6px;
+    word-spacing: 3px;
+}    
+
+@media only screen and (max-width: 1024px) {
+    .nav{
+        width: 185vw;
+    }
+    #Home{
+        width: 185vw;
+    }
+    #Employee{
+        width: 185vw;
+    }
+    #Salary{
+        width: 185vw;
+    }
+    #Account{
+        width: 185vw;
+    }
+    #Branch{
+        width: 185vw;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .nav{
+        width: 296vw;
+    }
+    #Home{
+        width: 296vw;
+    }
+    #Employee{
+        width: 296vw;
+    }
+    #Salary{
+        width: 296vw;
+    }
+    #Account{
+        width: 296vw;
+    }
+    #Branch{
+        width: 296vw;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .nav{
+        width: 400vw;
+    }
+    #Home{
+        width: 400vw;
+    }
+    #Employee{
+        width: 400vw;
+    }
+    #Salary{
+        width: 400vw;
+    }
+    #Account{
+        width: 400vw;
+    }
+    #Branch{
+        width: 400vw;
+    }
+}
+
+ul{
+    list-style: none;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    /* background: rgb(0, 255, 34); */
+    background-color: darkblue;
+    box-shadow: 4px 0px 5px;
+}
+
+ul li{
+    margin: 5px;
+    padding: 5px;
+    margin-top: 75px;
+}
+
+ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 5px;
+}
+
+.icon{
+    padding-right: 8px;
+}
+
+ul li a:hover{
+    background: white;
+    border: 1px solid white;
+    color: rgb(241, 69, 241);
+    border-radius: 24px;
+    padding: 12px;
+}
+
+section{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.header{
+    padding-right: 24px;
+    font-size: 48px;
+    font-weight: 600;
+    font-family: monospace;
+    color: yellow;
+}
+
+#Home{
+    background: linear-gradient(-45deg,white 30%,yellow 0%);
+}
+
+#Employee{
+    background: linear-gradient(-45deg,white 30%,rgb(0, 183, 255) 0%);
+}
+
+#Salary{
+    background: linear-gradient(-45deg,white 30%,rgb(255, 0, 200) 0%);
+}
+
+#Account{
+    background: linear-gradient(-45deg,white 30%,rgb(255, 153, 0) 0%);
+}
+
+#Branch{
+    background: linear-gradient(-45deg,white 30%,rgb(0, 255, 21) 0%);
+}
+
+.container{
+    width: 60%;
+    height: 30vh;
+    border: 2px dotted pink;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.Employee{
+    padding: 6px 6px;
+    font-weight: 600;
+}
+
+.change{
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    width: 200px;
+    height: 26px;
+    /* border: 1px solid black;
+    line-height: 20px; */
+    margin: 20px 10px;
+    border: none;
+}
+
+.btn2{
+    color: white;
+    background-color: teal;
+    border: 1px solid teal;
+    border-radius: 16px;
+    font-size: 24px;
+    padding: 3px 30px;
+    margin: 12px 12px;
+    cursor: pointer;
+}
+
+.btn2:hover{
+    cursor: pointer;
+    border: 1px solid red;
+    background-color: red;
+}
+
+.Employee{
+    border-radius: 24px;
+    padding: 12px;
+}
+
+.container-account{
+    padding: 24px 24px;
+    border: 4px dotted black;
+    border-radius: 24px;
+}
+
+.information{
+    padding: 16px;
+}
+
+.information span{
+    font-size: 24px;
+    font-weight: 600;
+    margin-right: 16px;
+}
+
+.type{
+    border-radius: 18px;
+    border: 2px solid black;
+    color: black;
+    font-size: 16px;
+    background-color: transparent;
+    font-weight: 600;
+    padding: 6px 6px;
+    color: white;
+}
+
+
+
+#person{
+    width: 250px;
+    height: 100px;
+    padding: 10px 40px;
+    border-radius: 10px;
+    font-size: 15px;
+    background:linear-gradient(-45deg,white 45%,rgb(58, 241, 241) 0%);
+    border: 1px solid rgb(243, 123, 143);
+    margin: 20px;  
+}
+
+.container1{
+    width: 60%;
+    height: 60vh;
+    border: 4px dotted pink;
+    border-radius: 24px;
+}
+
+/* .container2{
+    width: 70%;
+    height: 40vh;
+    border: 4px dotted pink;
+    border-radius: 25px;
+    position: relative;   
+    align-items: center;
+    font-size: 18px;
+} */
+
+/* .Employee:hover{
+    color: wheat;
+    background: linear-gradient(22deg rgb(250, 179, 191),white, 0%);
+} */
+/* 
+label{
+    width: 250px;
+    height: 26px;
+    border: 1px solid black;
+} */
+
+/* button{
+    width: 300px;
+    height: 25px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+} */
+    
+/* button.Employee{
+    width: 300px;
+    height: 28px;
+    justify-content: center;
+    align-items: center;
+}
+button.Employee:hover{
+    color: rgb(248, 203, 121);
+    background:linear-gradient(-54deg pink,wheat,0% );
+    
+} */
+
+#A-Employee{
+    width: 250px;
+    height: 26px;
+    margin-top: 20px;
+    margin-left: 10px;
+    padding: 10px 15px;
+    border: 1px solid black;
+    
+    justify-content: center;
+}
+
+
+label{
+    height: 30px;
+}
+
+#for{
+    height: 30px;
+}
